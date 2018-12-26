@@ -25,7 +25,7 @@ apply plugin: 'com.android.library'
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.github.RoyDaipayan:TestPipelineRepo:master-SNAPSHOT'
+    implementation 'com.github.RoyDaipayan:TestPipelineRepo:ar_1.0.0'
 }
 
 android {
