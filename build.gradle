@@ -48,10 +48,10 @@ android {
             //jniDebuggable true
         }
         release {
-
-           // useProguard false
-        //    proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-unity.txt'
-        //    signingConfig signingConfigs.debug
+            //minifyEnabled false
+            // useProguard false
+            //    proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-unity.txt'
+            //    signingConfig signingConfigs.debug
         }
     }
 
