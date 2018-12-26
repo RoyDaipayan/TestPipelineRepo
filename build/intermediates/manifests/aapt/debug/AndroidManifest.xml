@@ -22,12 +22,7 @@
         android:name="android.hardware.touchscreen.multitouch.distinct"
         android:required="false" />
 
-    <application
-        android:banner="@drawable/app_banner"
-        android:icon="@mipmap/app_icon"
-        android:isGame="true"
-        android:label="@string/app_name"
-        android:theme="@style/UnityThemeSelector" >
+    <application>
         <activity
             android:name="com.Test.TestBuild.UnityPlayerActivity"
             android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
@@ -35,13 +30,12 @@
             android:label="@string/app_name"
             android:launchMode="singleTask"
             android:screenOrientation="fullSensor" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-            </intent-filter>
-
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- <category android:name="android.intent.category.LEANBACK_LAUNCHER" /> -->
+            <!-- </intent-filter> -->
             <meta-data
                 android:name="unityplayer.UnityActivity"
                 android:value="true" />
