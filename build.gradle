@@ -8,11 +8,13 @@ buildscript {
 
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
     }
 }
 
 allprojects {
     repositories {
+        maven { url 'https://jitpack.io' }
         flatDir {
             dirs 'libs'
         }
@@ -23,6 +25,7 @@ apply plugin: 'com.android.library'
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.github.RoyDaipayan:TestPipelineRepo:master-SNAPSHOT'
 }
 
 android {
